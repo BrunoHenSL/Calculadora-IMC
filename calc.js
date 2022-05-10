@@ -59,7 +59,7 @@ function validaEntrada(args){
     if (!!arguments[i] == false || arguments[i] < 0){
       return false;
     }
-  }window.CP.exitedLoop(0);
+  }
   return true;
 }
 
