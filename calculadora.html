@@ -44,19 +44,25 @@
     
     </article>
   </section>
-  <form id="formulario">
-    <fieldset>
-      <legend>Calculo IMC</legend>
-      <label for="kilos">Kilos:</label>
-      <input name="kilos" type="text" />
-      <label for="metros">Metros:</label>
-      <input name="metro" type="text" />
-      <label for="Centimetros">Centimetros:</label>
-      <input name="centimetros" type="text" />
-      <label for="imc">IMC:</label>
-      <input name="imc" type="text" disabled="disabled" />
-      <a href="#" onclick="calcular()">Calcular</a>
-    </fieldset>
-  </form>
+  <main class="main">
+    <section class="calc-imc">
+      <hi>Calculadora IMC</hi>
+      <form class="form" id="form">
+        <label for="kilos">
+          Quilos
+          <input name="kilos" id="kilos" placeholder="Peso atual" type="number" />
+        </label>
+        <label for="altura">
+          Altura
+          <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+        </label>
+        <label for="imc">
+          IMC
+          <input disabled="disabled" name="imc" id="imc" />
+        </label>
+        <button>Calcular</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
